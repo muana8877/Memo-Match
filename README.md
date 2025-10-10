@@ -50,6 +50,7 @@ yarn dev
 Once it's running, open http://localhost:3000
  in your browser 🖥️
 
+```
 ##🧩 How to Play
 
 -Choose a difficulty (Easy / Medium / Hard)
