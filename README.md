@@ -1,40 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🎀 Memo-Match
 
-## Getting Started
+Welcome to **Memo-Match** — a charming memory card matching game built with Next.js!  
+Test your memory, earn confetti, and watch out for the mischievous crow when you lose 🐦‍⬛
 
-First, run the development server:
+👉 **Live Demo:** [https://memo-match.vercel.app/](https://memo-match.vercel.app/)
+
+---
+
+## 🌈 Features
+
+- 🃏 Flip cards to find matching pairs with smooth animations  
+- 🧠 Three difficulty modes (Easy, Medium, Hard) with move limits  
+- 🎉 Confetti celebration when you win  
+- 🐦 Funny “You Lost” popup with a flying crow animation  
+- 📱 Fully responsive for mobile & desktop  
+- ⚡ Built with modern React hooks & Next.js
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer        | Tech / Library         |
+|-------------|--------------------------|
+| Frontend    | React + Next.js         |
+| Styling     | CSS / CSS Modules       |
+| Animation   | CSS keyframes + canvas-confetti |
+| Deployment  | Vercel                  |
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally:
 
 ```bash
+# 1️⃣ Clone this repo
+git clone https://github.com/<your-username>/memo-match.git
+cd memo-match
+
+# 2️⃣ Install dependencies
+npm install
+# or
+yarn
+
+# 3️⃣ Start the development server
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Once it's running, open http://localhost:3000
+ in your browser 🖥️
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##🧩 How to Play
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+-Choose a difficulty (Easy / Medium / Hard)
+-Flip cards to reveal their symbols
+-Match pairs within the allowed number of moves
+-🎉 Win = confetti party!
+-💀 Lose = crow flies across your screen
+-Click New Game or Play Again to restart
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Built with ❤️ by Mahnoor as a fun way to practice React, Next.js, and frontend animations.
