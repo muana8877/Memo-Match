@@ -51,13 +51,15 @@ Once it's running, open http://localhost:3000
  in your browser 🖥️
 
 ```
-##🧩 How to Play
+---
 
--Choose a difficulty (Easy / Medium / Hard)
--Flip cards to reveal their symbols
--Match pairs within the allowed number of moves
--🎉 Win = confetti party!
--💀 Lose = crow flies across your screen
--Click New Game or Play Again to restart
+## 🧩 How to Play
+
+- Choose a difficulty (Easy / Medium / Hard)
+- Flip cards to reveal their symbols
+- Match pairs within the allowed number of moves
+- Click New Game or Play Again to restart
+
+---
 
 Built with ❤️ by Mahnoor as a fun way to practice React, Next.js, and frontend animations.
