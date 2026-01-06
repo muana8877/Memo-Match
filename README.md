@@ -62,4 +62,8 @@ Once it's running, open http://localhost:3000
 
 ---
 
+
+https://github.com/user-attachments/assets/2d99e8c7-f9ec-4c1e-b196-fde17c7bc9c1
+
+
 Built with ❤️ by Mahnoor as a fun way to practice React, Next.js, and frontend animations.
