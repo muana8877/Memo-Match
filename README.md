@@ -35,7 +35,7 @@ Follow these steps to run the project locally:
 
 ```bash
 # 1️⃣ Clone this repo
-git clone https://github.com/<your-username>/memo-match.git
+git clone https://github.com/muana8877/Memo-Match.git
 cd memo-match
 
 # 2️⃣ Install dependencies
