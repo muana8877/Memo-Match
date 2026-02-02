@@ -58,8 +58,12 @@ const index = () => {
     setMoves(0);
     setRunning(false);
     setRemainingMoves(moveLimits[d]);
-    const stored = typeof window !== "undefined" && JSON.parse(localStorage.getItem(BEST_KEY) || "{}");
-    setBest(stored?.[d] || null);
+    try {
+      const stored = typeof window !== "undefined" && JSON.parse(localStorage.getItem(BEST_KEY) || "{}");
+      setBest(stored?.[d] || null);
+    } catch (e) {
+      setBest(null);
+    }
   }
 
   useEffect(() => {
@@ -109,17 +113,20 @@ const index = () => {
       launchConfetti();
 
       // Save best
-      const current = { moves, date: new Date().toISOString() };
-      const stored = typeof window !== "undefined" && JSON.parse(localStorage.getItem(BEST_KEY) || "{}");
-      const prev = stored?.[difficulty];
-      let shouldSave = false;
-      if (!prev) shouldSave = true;
-      else if (moves < prev.moves) shouldSave = true;
-      else if (moves === prev.moves && time < prev.time) shouldSave = true;
-      if (shouldSave) {
-        const next = { ...(stored || {}), [difficulty]: current };
-        localStorage.setItem(BEST_KEY, JSON.stringify(next));
-        setBest(current);
+      try {
+        const current = { moves, date: new Date().toISOString() };
+        const stored = typeof window !== "undefined" && JSON.parse(localStorage.getItem(BEST_KEY) || "{}");
+        const prev = stored?.[difficulty];
+        let shouldSave = false;
+        if (!prev) shouldSave = true;
+        else if (moves < prev.moves) shouldSave = true;
+        if (shouldSave) {
+          const next = { ...(stored || {}), [difficulty]: current };
+          localStorage.setItem(BEST_KEY, JSON.stringify(next));
+          setBest(current);
+        }
+      } catch (e) {
+        // localStorage unavailable, skip saving
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps

@@ -1,13 +1,7 @@
 // components/Card.js
 import React from "react";
-import { useEffect } from "react";
+
 export default function Card({ card, flipped, handleClick, disabled }) {
-
-
-    useEffect(() => {
-        console.log(card.content, flipped);
-    }, [flipped]);
-
     return (
         <>
                 <button
